@@ -13,7 +13,7 @@ public class BaseTest {
 
  @Before
  public void setUp() {
-  driver = WebDriverFactory.getDriver("chrome"); // для смены браузера надо изменить название браузера на "firefox"
+  driver = WebDriverFactory.getDriver();
   driver.get(BASE_URL);
   RestAssured.baseURI = BASE_URL;
  }
